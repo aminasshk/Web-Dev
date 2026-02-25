@@ -1,0 +1,48 @@
+<nav class="top-nav">
+  <div class="container nav-inner">
+    <img src="kaspi.svg" alt="Kaspi" class="logo">
+
+    <div class="nav-links">
+      <a href="#">Клиентам</a>
+      <a href="#">Бизнесу</a>
+      <a href="#">Kaspi Гид</a>
+    </div>
+  </div>
+</nav>
+
+<div class="search-bar">
+  <div class="container search-inner">
+
+    <div class="search-box">
+      <button class="shop-btn">Магазин</button>
+
+      <input type="text"
+             placeholder="Поиск товара"
+             class="search-input">
+
+      <button class="search-btn">
+        <img src="small-search.png" alt="search">
+      </button>
+    </div>
+
+    <div class="city">
+      <span>Мой город:</span>
+      <a href="#">Алматы</a>
+    </div>
+
+  </div>
+</div>
+
+<nav class="categories">
+  <div class="container categories-inner">
+
+    <a
+      *ngFor="let cat of categories"
+      (click)="selectCategory(cat.id)">
+      {{ cat.name }}
+    </a>
+
+  </div>
+</nav>
+
+<prod-list [products]="products"></prod-list>

@@ -1,0 +1,146 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/*TOP NAV*/
+
+.top-nav {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 10px 0;
+  background: white;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 32px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  font-size: 16px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #9ca3af;
+}
+
+.nav-links a:hover {
+  color: black;
+}
+
+/*SEARCH BAR*/
+
+.search-bar {
+  border-bottom: 1px solid #d1d5db;
+  padding: 10px 0;
+  background: white;
+}
+
+.search-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-box {
+  display: flex;
+  width: 600px;
+}
+
+.shop-btn {
+  padding: 8px 20px;
+  background: #e5e7eb;
+  border: 1px solid #d1d5db;
+  color: #0089d0;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px 16px;
+  border-top: 1px solid #d1d5db;
+  border-bottom: 1px solid #d1d5db;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+
+.search-btn {
+  padding: 8px 16px;
+  background: #0089d0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search-btn img {
+  height: 16px;
+}
+
+/*CITY*/
+
+.city {
+  font-size: 14px;
+}
+
+.city span {
+  color: black;
+}
+
+.city a {
+  color: #0089d0;
+  margin-left: 6px;
+  text-decoration: none;
+}
+
+.city a:hover {
+  text-decoration: underline;
+}
+
+/*CATEGORIES*/
+
+.categories {
+  border-bottom: 1px solid #d1d5db;
+  background: white;
+  justify-content: center;
+}
+
+.categories-inner {
+  display: flex;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.categories-inner a {
+  padding: 10px 16px;
+  border-right: 1px solid #d1d5db;
+  color: #0089d0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.categories-inner a:first-child {
+  border-left: 1px solid #d1d5db;
+}
+
+.categories-inner a:hover {
+  background: #e5e7eb;
+}

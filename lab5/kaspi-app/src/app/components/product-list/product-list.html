@@ -1,0 +1,8 @@
+<div class="products-wrapper">
+  @for (product of displayProducts; track product.id) {
+    <prod-card
+      [product]="product"
+      (deleteProduct)="onDelete($event)">
+    </prod-card>
+  }
+</div>
