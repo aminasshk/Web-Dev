@@ -1,0 +1,55 @@
+<a [href]="product().link" target="_blank" class="card-link">
+  <div class="card">
+
+    <div class="image-container">
+      <span class="badge">0 • 0 • 12</span>
+      <img [src]="product().image" [alt]="product().name">
+    </div>
+
+    <div class="card-body">
+
+      <div class="title">
+        {{ product().description }}
+      </div>
+
+      <div class="rating">
+        <span *ngFor="let star of [1,2,3,4,5]">
+          {{ star <= product().rating ? '★' : '☆' }}
+        </span>
+        <span class="reviews">(15932 отзыва)</span>
+      </div>
+
+      <div class="labels">
+        <span>Цена</span>
+        <span>В рассрочку</span>
+      </div>
+
+      <div class="price-row">
+
+        <div>
+          <span class="price">{{ product().price }} ₸</span>
+
+          <div class="installment">
+            <span>{{ Math.ceil(product().price / 3) }}</span>
+            <span>x3</span>
+          </div>
+        </div>
+
+        <div class="share-buttons">
+          <img 
+            src="whatsapp-icon.png"
+            (click)="shareWhatsApp($event)"
+            alt="WhatsApp">
+
+          <img 
+            src="telegram_logo.png"
+            (click)="shareTelegram($event)"
+            alt="Telegram">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</a>

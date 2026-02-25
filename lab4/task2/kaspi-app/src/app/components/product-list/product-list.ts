@@ -1,0 +1,137 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { productModel } from '../../models/product.model';
+import { ProductCard } from '../product-card/product-card';
+
+@Component({
+  selector: 'prod-list',
+  standalone: true,
+  imports: [CommonModule, ProductCard],
+  templateUrl: './product-list.html',
+  styleUrl: './product-list.css'
+})
+export class ProductList {
+
+  products: productModel[] = [
+    {
+      id: 1,
+      name: 'iPhone 13 Case Hearts',
+      description: 'Чехол для Apple iPhone 13 рисунок',
+      price: 318,
+      rating: 5,
+      image: 'products/iphone13.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/chehol-dlja-apple-iphone-13-risunok-114183031/?c=750000000',
+    },
+    {
+      id: 2,
+      name: 'iPhone 13 Clear Case',
+      description: 'Чехол для Apple iPhone 13 прозрачный',
+      price: 10,
+      rating: 5,
+      image: 'products/clearcase.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/chehol-dlja-apple-iphone-13-prozrachnyi-106185651/?c=750000000',
+    },
+    {
+      id: 3,
+      name: 'Type-C Cable VARIUM',
+      description: 'Кабель VARIUM USB 4 Type-C (M), 1 м, VTT03 белый',
+      price: 1999,
+      rating: 5,
+      image: 'products/typec.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/kabel-varium-usb-4-type-c-m-1-m-vtt03-belyi-144182006/?c=750000000',
+    },
+    {
+      id: 4,
+      name: 'JASPER iPhone 17 Pro',
+      description: 'Чехол JASPER для Apple iPhone 17 Pro прозрачный',
+      price: 990,
+      rating: 5,
+      image: 'products/jasper.jpeg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/chehol-jasper-dlja-apple-iphone-17-pro-prozrachnyi-146498145/?c=750000000',
+    },
+    {
+      id: 5,
+      name: 'iPhone 13 Cat Case',
+      description: 'Чехол для iPhone 13 рисунок с котиками',
+      price: 288,
+      rating: 5,
+      image: 'products/cats.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/chehol-dlja-iphone-13-risunok-s-kotikami-121726663/?c=750000000',
+    },
+    {
+      id: 6,
+      name: 'iPhone 11 Snake Case',
+      description: 'Чехол для Apple iPhone 11 рисунок',
+      price: 314,
+      rating: 5,
+      image: 'products/snakecase.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/chehol-dlja-apple-iphone-11-risunok-130003996/?c=750000000',
+    },
+    {
+      id: 7,
+      name: 'iPhone 17 Pro 256Gb Orange',
+      description: 'Apple iPhone 17 Pro 256Gb оранжевый',
+      price: 823758,
+      rating: 5,
+      image: 'products/iphone17256.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/apple-iphone-17-pro-256gb-oranzhevyi-145467625/?c=750000000',
+    },
+    {
+      id: 8,
+      name: 'iPhone 15 128Gb Black',
+      description: 'Apple iPhone 15 128Gb черный',
+      price: 402297,
+      rating: 5,
+      image: 'products/iphone15128.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/apple-iphone-15-128gb-chernyi-113137790/?c=750000000',
+    },
+    {
+      id: 9,
+      name: 'iPhone 13 128Gb Black',
+      description: 'Apple iPhone 13 128Gb черный',
+      price: 330000,
+      rating: 5,
+      image: 'products/iphone13128.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-chernyi-102298404/?c=750000000',
+    },
+    {
+      id: 10,
+      name: 'iPhone 17 Pro Max 256Gb Orange',
+      description: 'Apple iPhone 17 Pro Max 256Gb оранжевый',
+      price: 873340,
+      rating: 5,
+      image: 'products/iphone17promax.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/apple-iphone-17-pro-max-256gb-oranzhevyi-145468241/?c=750000000',
+    },
+    {
+      id: 11,
+      name: 'iPhone 17 Pro 256Gb Dark Blue',
+      description: 'Apple iPhone 17 Pro 256Gb темно-синий',
+      price: 804900,
+      rating: 5,
+      image: 'products/iphone17blue.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/apple-iphone-17-pro-256gb-temno-sinii-145438959/?c=750000000',
+    },
+    {
+      id: 12,
+      name: 'Samsung Galaxy A07 6/128Gb Black',
+      description: 'Samsung Galaxy A07 6 ГБ/128 ГБ черный',
+      price: 68666,
+      rating: 5,
+      image: 'products/samsung.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/samsung-galaxy-a07-6-gb-128-gb-chernyi-144817763/?c=750000000',
+    }
+  ];
+}
